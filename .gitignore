@@ -1,0 +1,5 @@
+/env/
+/temp/*
+.project
+.pydevproject
+*.pyc
