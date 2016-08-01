@@ -3,6 +3,14 @@ import os
 from datetime import datetime
 from dropbox_sync import DropboxSync
 
+
+dir = "temp/"
+
+try:
+    os.stat(dir)
+except:
+    os.mkdir(dir)       
+
 db_files=[]
 for db in parameters.get("databases"):
     db_file="%s_%s.sql" % (db["name"], str(datetime.now().isoformat()).replace(" ","_").replace(":","_").replace(".","_") );
