@@ -1,4 +1,4 @@
-arguments={
+parameters={
            "dropbox":{
                       "token":"--dropbox application token--",
                       "sql_backup_folder":"/sql_backup/"
