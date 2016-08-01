@@ -7,7 +7,7 @@ db_files=[]
 for db in parameters.get("databases"):
     db_file="%s_%s.sql" % (db["name"], str(datetime.now().isoformat()).replace(" ","_").replace(":","_").replace(".","_") );
     #db_file="backup_%s_%s.sql" % (db["name"], "2016" )
-    os.system("mysqldump -u%s -p%s --opt %s > temp/%s" % (db["user"],db["password"],db["name"],db_file))
+    os.system("mysqldump -h%s -P%s -u%s -p%s --opt %s > temp/%s" % (db["host"], db["port"], db["user"], db["password"], db["name"],db_file))
     db_files.append(db_file)
 
 compress_files=[]    
