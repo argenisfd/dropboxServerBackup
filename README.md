@@ -36,7 +36,7 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 * **databases.name:** Nombre de la base de datos a la que se le hará el backup.
 * **directory_backup:** Listado de rutas a las que se le desea hacer el backup, esto no está desarrollado aún, espero colaboradores :).
 
-
+```
 	"""paramaters.py"""
 	
 	parameters={
@@ -63,5 +63,5 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 	       "directory_backup":[],
 	       
 	       }
-
+```
 
