@@ -37,7 +37,8 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 * **directory_backup:** Listado de rutas a las que se le desea hacer el backup, esto no está desarrollado aún, espero colaboradores :).
 
 
-	#paramaters.py
+	"""paramaters.py"""
+	
 	parameters={
 	       "dropbox":{
 	                  "token":"--dropbox application token--",
