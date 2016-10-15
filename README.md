@@ -28,7 +28,7 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 
 * **dropbox.token:** token de la api de dropbox
 * **dropbox.sql_backup_folder:** carpeta donde se guardarán los backups (en dropbox) 
- 
+
 	#paramaters.py
 	parameters={
 	       "dropbox":{
