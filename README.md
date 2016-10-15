@@ -28,6 +28,14 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 
 * **dropbox.token:** token de la api de dropbox
 * **dropbox.sql_backup_folder:** carpeta donde se guardarán los backups (en dropbox) 
+* **databases:** aquí puede ir una lista de bases de datos a las que se les quiere hacer bakup
+* **databases.host:** IP o dominio del servidor de base de datos.
+* **databases.port:** Puerto del servidor de base de datos.
+* **databases.user:** Usuario del servidor de base de datos, verificar el el usuario tenga acceso a la base de datos a la que se le desea hacer el backup.
+* **databases.password:** Password del usuario de base de datos.
+* **databases.name:** Nombre de la base de datos a la que se le hará el backup.
+* **directory_backup:** Listado de rutas a las que se le desea hacer el backup, esto no está desarrollado aún, espero colaboradores :).
+
 
 	#paramaters.py
 	parameters={
@@ -54,3 +62,5 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 	       "directory_backup":[],
 	       
 	       }
+
+
