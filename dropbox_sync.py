@@ -22,7 +22,7 @@ class DropboxSync(object):
             # are changed on upload
             print("Uploading " + file_from + " to Dropbox as " + file_to + "...")
             try:
-                self.dbx.files_upload(f, file_to, mode=WriteMode('overwrite'))
+                return self.dbx.files_upload(f, file_to, mode=WriteMode('overwrite'))
             except ApiError as err:
                 # This checks for the specific error where a user doesn't have
                 # enough Dropbox space quota to upload this file
@@ -34,3 +34,7 @@ class DropboxSync(object):
                     sys.exit()
                 else:
                     print(err)
+    def delete(self, file_path):
+        print("deleting file %s ...", (file_path, ))
+        data = self.dbx.files_delete(file_path)
+        

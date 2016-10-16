@@ -4,3 +4,4 @@
 .pydevproject
 *.pyc
 parameters.py
+last_transaction.json
