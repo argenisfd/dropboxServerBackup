@@ -1,10 +1,10 @@
 Python Application to create backup into dropbox account
 
 #Requerimientos
-python >= 2.7
-git
-pip
-virtualenv (opcional)
+python >= 2.7 
+git 
+pip 
+virtualenv (opcional) 
 
 #Instalación
 
