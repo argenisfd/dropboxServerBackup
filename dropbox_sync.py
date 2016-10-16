@@ -35,6 +35,6 @@ class DropboxSync(object):
                 else:
                     print(err)
     def delete(self, file_path):
-        print("deleting file %s ...", (file_path, ))
+        print("deleting file %s ..."% (file_path, ))
         data = self.dbx.files_delete(file_path)
         
