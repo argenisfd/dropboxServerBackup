@@ -101,4 +101,29 @@ parameters={
        }
 ```
 
-Una vez configurado correctamente los parametros
+Una vez configurado correctamente los parametros probamos
+
+	python backup_command.py
+	
+Si todo funciona bien vamos al siguiente paso.
+
+##Configurar Cron
+
+	crontab -e
+
+Y editamos el archivo de cron, si no pregunta el editor a usar, preferiblemente usar `nano`. y agregamos esta linea al final del archivo ([Saber mas sobre crontab](http://blog.desdelinux.net/cron-crontab-explicados/) [herramienta para crear crontab](http://crontab-generator.org/) ).
+
+	0 3 1 * * PYTHONPATH=/RUTA-HASTA-LA-CARPETA-ENV-CREADA/lib/python2.7/site-packages/ python /RUTA-HASTA-LA-CARPETA-DE-INSTALACION/backup_command.py 
+  
+Con esta linea el backup se ejecutará todos los días a las 3:01 am.
+
+Para probar si el comando ingresado anteriormente funciona bien lo probamos directamente en la consola.
+	
+Primero desactivamos el virtualenv
+
+	deactivate
+
+ejecutamos 
+
+	PYTHONPATH=/RUTA-HASTA-LA-CARPETA-ENV-CREADA/lib/python2.7/site-packages/ python /RUTA-HASTA-LA-CARPETA-DE-INSTALACION/backup_command.py
+
