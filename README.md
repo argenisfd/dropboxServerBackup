@@ -26,7 +26,7 @@ Para mayor información visitar esta [web](http://rukbottoland.com/blog/tutorial
 
 
 ##Clonar el repositorio
-Ante de clonar el repositorio debe ubicarse en la carpeta donde se va a hacer la inatalción. Para este ejemplo usaremos la carpeta come del usuario actual
+Ante de clonar el repositorio debe ubicarse en la carpeta donde se va a hacer la instalación. Para este ejemplo usaremos la carpeta come del usuario actual
 	cd ~
 
 Ahora hacemos clone del proyecto con git
@@ -67,7 +67,7 @@ y modificamos el contenido del nuevo archivo creado `parameters.py`
 * **databases.user:** Usuario del servidor de base de datos, verificar el el usuario tenga acceso a la base de datos a la que se le desea hacer el backup.
 * **databases.password:** Password del usuario de base de datos.
 * **databases.name:** Nombre de la base de datos a la que se le hará el backup.
-* **databases.dropbox_backup_strategy (opcional):** estrategia para el almacenamiento en dropbox (**normal** = crea un nuevo archivo, **replace** = creal el nuevo archivo y elimina el anterior, **replace_if_gt_or_eq** = Genera el nuevo archivo y elimina el anterior si es mas pequeño o igual al nuevo).
+* **databases.dropbox_backup_strategy (opcional):** estrategia para el almacenamiento en dropbox (**normal** = crea un nuevo archivo, **replace** = crea el nuevo archivo y elimina el anterior, **replace_if_gt_or_eq** = Genera el nuevo archivo y elimina el anterior si es mas pequeño o igual al nuevo).
 * **directory_backup:** Listado de rutas a las que se le desea hacer el backup, esto no está desarrollado aún, espero colaboradores :).
 
 
